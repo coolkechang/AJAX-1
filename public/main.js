@@ -6,7 +6,7 @@ getCSS.onclick = () => {
     const request = new XMLHttpRequest()
     //创建 HttpRequest 对象
     //readystate = 0
-    request.open('GET', '/style.css')
+    request.open('GET', 'style.css')
     //调用对象的 open 方法。（可查MDN中 XMLHttpRequest open 的用法）; 注意：只用两个参数。第一个参数是选择用哪个请求（get/post）；第二个参数是URL
     //readystate = 1
     request.onreadystatechange = () => {
