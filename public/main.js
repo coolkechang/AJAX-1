@@ -35,7 +35,7 @@ getCSS.onclick = () => {
 
 getJS.onclick = () => {
     const request = new XMLHttpRequest()
-    request.open('GET', '/javascript.js')
+    request.open('GET', 'javascript.js')
     request.onreadystatechange = () => {
         console.log(request.readyState)
         if (request.readyState === 4) {
@@ -55,7 +55,7 @@ getJS.onclick = () => {
 
 getHTML.onclick = () => {
     const request = new XMLHttpRequest()
-    request.open('GET', '/html.html')
+    request.open('GET', 'html.html')
     request.onreadystatechange = () => {
         console.log(request.readyState)
         if (request.readyState === 4) {
@@ -75,7 +75,7 @@ getHTML.onclick = () => {
 
 getXML.onclick = () => {
     const request = new XMLHttpRequest()
-    request.open('GET', '/4.xml')
+    request.open('GET', '4.xml')
     request.onreadystatechange = () => {
         if (
             request.readyState === 4 &&
@@ -96,7 +96,7 @@ getXML.onclick = () => {
 
 getJSON.onclick = () => {
     const request = new XMLHttpRequest()
-    request.open('GET', '/5.json')
+    request.open('GET', '5.json')
     request.onreadystatechange = () => {
         if (
             request.readyState === 4 &&
@@ -117,7 +117,7 @@ getJSON.onclick = () => {
 let n = 1
 getPage.onclick = () => {
     const request = new XMLHttpRequest()
-    request.open('GET', `/page${n + 1}.json`)
+    request.open('GET', `page${n + 1}.json`)
     request.onreadystatechange = () => {
         if (
             request.readyState === 4 &&
