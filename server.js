@@ -28,7 +28,7 @@ var server = http.createServer(function (request, response) {
         response.setHeader('Content-Type', 'text/html;charset=utf-8')
         let string = fs.readFileSync('public/index.html').toString()
         //把 public 的 index.html 文件读成字符串
-        const page1 = fs.readFileSync('db/page1.json').toString()
+        let page1 = fs.readFileSync('db/page1.json').toString()
         //page1是字符串（将 db/page1.json 文件读成字符串）
         const array = JSON.parse(page1) //将字符串变成数组
         const result = array.map((item) => `<li>${item.id}</li>`).join('')
